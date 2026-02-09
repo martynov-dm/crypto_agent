@@ -1,113 +1,113 @@
 # 🚀 CRYPTO ANALYSIS AI ASSISTANT 🚀
 
-## Описание проекта
+## Project Description
 
-CRYPTO ANALYSIS AI ASSISTANT - это интеллектуальный помощник для анализа криптовалют, использующий LLM (Large Language Models) и различные инструменты для предоставления актуальной информации и аналитики по криптовалютному рынку.
+CRYPTO ANALYSIS AI ASSISTANT is an intelligent assistant for cryptocurrency analysis that leverages LLMs (Large Language Models) and various tools to provide up-to-date information and analytics on the cryptocurrency market.
 
-## Возможности
+## Features
 
-- 📊 **Анализ цен криптовалют** - получение текущих цен и исторических данных
-- 🔥 **Отслеживание трендов** - анализ трендовых монет на рынке
-- 🔍 **Поиск информации** - поиск криптовалют по названию или символу
-- 📈 **Анализ DeFi протоколов** - получение данных о TVL и производительности протоколов
-- 💧 **Анализ ликвидности** - исследование пулов ликвидности на различных DEX
-- 📑 **Исторический анализ** - изучение исторических данных токенов
-- 👥 **Анализ держателей** - распределение токенов среди держателей
-- 📰 **Новости криптовалют** - получение актуальных новостей (в разработке)
+- 📊 **Cryptocurrency Price Analysis** - fetching current prices and historical data
+- 🔥 **Trend Tracking** - analyzing trending coins on the market
+- 🔍 **Information Search** - searching for cryptocurrencies by name or symbol
+- 📈 **DeFi Protocol Analysis** - retrieving TVL and protocol performance data
+- 💧 **Liquidity Analysis** - exploring liquidity pools across various DEXs
+- 📑 **Historical Analysis** - studying historical token data
+- 👥 **Holder Analysis** - token distribution among holders
+- 📰 **Crypto News** - fetching the latest news (in development)
 
-## Требования и установка
+## Requirements and Installation
 
-### Технические требования
+### Technical Requirements
 - Python 3.9+
-- Доступ к API: OpenAI, CoinGecko, Bitquery
+- API access: OpenAI, CoinGecko, Bitquery
 
-### Установка
+### Installation
 
 ```bash
-# Клонируем репозиторий
+# Clone the repository
 git clone https://github.com/yourusername/crypto_agent.git
 cd crypto_agent
 
-# Создаем виртуальное окружение
+# Create a virtual environment
 python -m venv .venv
-source .venv/bin/activate   # На Windows: .venv\Scripts\activate
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 
-# Устанавливаем зависимости
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-## Настройка окружения
+## Environment Setup
 
-1. Создайте файл `.env` в корневой директории проекта:
+1. Create a `.env` file in the project root directory:
 
 ```
-OPENAI_API_KEY=ваш_ключ_api_openai
-COINGECKO_API_KEY=ваш_ключ_api_coingecko
-BITQUERY_API_KEY=ваш_ключ_api_bitquery
+OPENAI_API_KEY=your_openai_api_key
+COINGECKO_API_KEY=your_coingecko_api_key
+BITQUERY_API_KEY=your_bitquery_api_key
 ```
 
-2. Некоторые функции могут работать без ключей API, но с ограничениями.
+2. Some features may work without API keys, but with limitations.
 
-## Использование
+## Usage
 
-Запустите основной скрипт:
+Run the main script:
 
 ```bash
 python src/main.py
 ```
 
-### Примеры запросов
+### Example Queries
 
-- "Какова текущая цена Bitcoin?"
-- "Покажи мне трендовые криптовалюты"
-- "Проанализируй протокол Uniswap"
-- "Найди информацию о токене PEPE"
-- "Проанализируй исторические данные Ethereum за последние 90 дней"
-- "Изучи распределение держателей SHIB"
+- "What is the current price of Bitcoin?"
+- "Show me trending cryptocurrencies"
+- "Analyze the Uniswap protocol"
+- "Find information about the PEPE token"
+- "Analyze Ethereum historical data for the last 90 days"
+- "Explore SHIB holder distribution"
 
-## Структура проекта
+## Project Structure
 
 ```
 crypto_agent/
 ├── src/
-│   ├── config/              # Конфигурация и настройки
-│   ├── core/                # Основная логика и агенты
-│   ├── models/              # Модели данных
-│   ├── tools/               # Инструменты для анализа криптовалют
-│   ├── ui/                  # Пользовательский интерфейс
-│   └── main.py              # Главный файл приложения
-├── test/                    # Тесты и примеры
-├── .env                     # Переменные окружения (не коммитить!)
-├── .gitignore               # Игнорируемые файлы
-├── requirements.txt         # Зависимости проекта
-└── README.md                # Документация
+│   ├── config/              # Configuration and settings
+│   ├── core/                # Core logic and agents
+│   ├── models/              # Data models
+│   ├── tools/               # Cryptocurrency analysis tools
+│   ├── ui/                  # User interface
+│   └── main.py              # Main application file
+├── test/                    # Tests and examples
+├── .env                     # Environment variables (do not commit!)
+├── .gitignore               # Ignored files
+├── requirements.txt         # Project dependencies
+└── README.md                # Documentation
 ```
 
-## Технологии и инструменты
+## Technologies and Tools
 
-- **LangChain & LangGraph** - создание цепочек и графов LLM
-- **OpenAI API** - обработка естественного языка
-- **Rich** - красивый текстовый интерфейс
-- **CoinGecko API** - данные о криптовалютах
-- **Bitquery API** - анализ блокчейн-данных
-- **DeFiLlama API** - данные о DeFi протоколах
-- **GeckoTerminal API** - анализ пулов ликвидности
+- **LangChain & LangGraph** - building LLM chains and graphs
+- **OpenAI API** - natural language processing
+- **Rich** - beautiful text-based interface
+- **CoinGecko API** - cryptocurrency data
+- **Bitquery API** - blockchain data analysis
+- **DeFiLlama API** - DeFi protocol data
+- **GeckoTerminal API** - liquidity pool analysis
 
-## Безопасность
+## Security
 
-⚠️ **Важно:** Никогда не коммитьте файлы, содержащие API ключи или другие секреты. Используйте переменные окружения или файлы, перечисленные в `.gitignore`.
+⚠️ **Important:** Never commit files containing API keys or other secrets. Use environment variables or files listed in `.gitignore`.
 
-## Лицензия
+## License
 
-Проект распространяется под лицензией MIT.
+This project is distributed under the MIT License.
 
-## Дальнейшее развитие
+## Roadmap
 
-- Интеграция с новыми источниками данных
-- Улучшение анализа и рекомендаций
-- Веб-интерфейс и API для удобного доступа
-- Расширение возможностей прогнозирования
+- Integration with new data sources
+- Improved analysis and recommendations
+- Web interface and API for convenient access
+- Extended forecasting capabilities
 
 ---
 
-Создано с 💜 для любителей криптовалют и аналитиков.
+Made with 💜 for crypto enthusiasts and analysts.
